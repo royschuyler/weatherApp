@@ -12,9 +12,7 @@
       <div class="item item-divider">
         Choose your scale adventure
       </div>
-      <ion-radio ng-model="$parent.scale" ng-value="'F'">Fahrenheit</ion-radio>
-      <ion-radio ng-model="$parent.scale" ng-value="'C'">Celcuis</ion-radio>
-      <ion-radio ng-model="$parent.scale" ng-value="'K'">Kelvin</ion-radio>
+      <ion-radio ng-repeat="scale in $parent.scales" ng-model="$parent.$parent.scale" ng-value="scale.symbol">{{scale.name}}</ion-radio>
     </ul>
   </ion-content>
 </ion-view>

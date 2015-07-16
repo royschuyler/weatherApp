@@ -1,6 +1,10 @@
-<ion-view view-title={{city}}>
+<ion-view view-title="{{city}}">
   <ion-content>
-    <h1>Weather!</h1>
-    <h1>{{current.temperature}}</h1>
+    <div class="row">
+      <div class="col center">
+        <h1 ng-hide="current">--°{{scale}}</h1>
+        <h1 ng-show="current">{{current.temperature | number:precision}}°{{scale}}</h1>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
