@@ -7,7 +7,7 @@ angular.module('won.search', [])
           params: { address: $scope.query }
         })
         .success(function (data) {
-          console.log(data.results);
+          // console.log(data.results);
           $scope.location = data.results;
         });
     }, 2000);

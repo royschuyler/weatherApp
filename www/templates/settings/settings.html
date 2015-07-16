@@ -1,0 +1,20 @@
+<ion-view view-title="Settings">
+  <ion-content>
+    <ul class="list">
+      <div class="item item-divider">
+        Precision
+      </div>
+      <div class="item range range-positive">
+        12°
+        <input type="range" ng-model="$parent.precision" min="0" max="2">
+        12.34°
+      </div>
+      <div class="item item-divider">
+        Choose your scale adventure
+      </div>
+      <ion-radio ng-model="$parent.scale" ng-value="'F'">Fahrenheit</ion-radio>
+      <ion-radio ng-model="$parent.scale" ng-value="'C'">Celcuis</ion-radio>
+      <ion-radio ng-model="$parent.scale" ng-value="'K'">Kelvin</ion-radio>
+    </ul>
+  </ion-content>
+</ion-view>
